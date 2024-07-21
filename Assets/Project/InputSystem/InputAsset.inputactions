@@ -1,0 +1,40 @@
+{
+    "name": "InputAsset",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "4fb05b5b-32a7-41d2-a38f-ec82a270923a",
+            "actions": [],
+            "bindings": []
+        },
+        {
+            "name": "Settings",
+            "id": "2db64a5c-25b6-4ab0-9a06-47ecfee971b7",
+            "actions": [
+                {
+                    "name": "FullScreen",
+                    "type": "Button",
+                    "id": "77a0f3bd-ebde-4fe2-a463-cf2316471918",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4ca8b54c-45c3-4f49-8a28-a1102321b642",
+                    "path": "<Keyboard>/f11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FullScreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
