@@ -6,10 +6,10 @@ using static ScreenChanger;
 public class ScreenChangerController : MonoBehaviour
 {
     public ScreenChanger ScreenChanger;
-    public Direction Direction;
+    public Vector2Int Coordinates;
 
     public void ChangeScreen()
     {
-        ScreenChanger.ChangeScreen(Direction);
+        ScreenChanger.ChangeScreen(Coordinates);
     }
 }
