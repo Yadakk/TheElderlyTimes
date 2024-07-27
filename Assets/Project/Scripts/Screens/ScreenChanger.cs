@@ -16,4 +16,9 @@ public class ScreenChanger : MonoBehaviour
     {
         RectTransform.DOLocalMove(RectTransform.rect.size * -coordinates, TransitionDurationSeconds).SetEase(Ease);
     }
+
+    public void ChangeScreen(Vector2Int coordinates, TweenCallback callback)
+    {
+        RectTransform.DOLocalMove(RectTransform.rect.size * -coordinates, TransitionDurationSeconds).SetEase(Ease).OnComplete(callback);
+    }
 }
