@@ -94,7 +94,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1055663472831717314, guid: dd2ab134a6b23f94ab1b5f41be14d168, type: 3}
       propertyPath: m_Name
-      value: ScreenChangeButton (1) Variant
+      value: ScreenChangeButtonLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648783492255113139, guid: dd2ab134a6b23f94ab1b5f41be14d168, type: 3}
+      propertyPath: CoordinateChange.x
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

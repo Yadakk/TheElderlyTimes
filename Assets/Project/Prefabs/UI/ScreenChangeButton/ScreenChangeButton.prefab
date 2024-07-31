@@ -89,23 +89,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8af518986683964b9a685b5ec99c5c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScreenChanger: {fileID: 0}
-  Coordinates: {x: 0, y: 0}
+  CoordinateChange: {x: 0, y: 0}
   OnChangedScreen:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5711052132389030798}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: set_interactable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5711052132389030798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,18 +141,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ScreenChangerController, Screens
         m_MethodName: ChangeScreen
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5711052132389030798}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: set_interactable
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
