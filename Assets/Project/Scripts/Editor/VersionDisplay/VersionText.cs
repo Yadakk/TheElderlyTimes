@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using TMPro;
 
+[RequireComponent(typeof(TextMeshProUGUI))]
 [ExecuteInEditMode]
 public class VersionText : MonoBehaviour
 {

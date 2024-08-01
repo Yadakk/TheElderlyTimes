@@ -57,7 +57,7 @@ namespace Verpha.HierarchyDesigner
         #region Methods
         private static void CreateFolder(string folderName, bool shouldRename)
         {
-            GameObject folder = new GameObject(folderName);
+            GameObject folder = new(folderName);
             folder.AddComponent<HierarchyDesignerFolder>();
             if (folderInspectorIcon != null) { EditorGUIUtility.SetIconForObject(folder, folderInspectorIcon); }
             if (shouldRename) { EditorApplication.delayCall += () => BeginRename(folder); }
