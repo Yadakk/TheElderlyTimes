@@ -1,6 +1,6 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 using UnityEngine.EventSystems;
 
 public class VersionChanger : EditorWindow
@@ -15,6 +15,7 @@ public class VersionChanger : EditorWindow
         if (GUILayout.Button("Accept"))
         {
             PlayerSettings.bundleVersion = _inputText;
+            ProjectInfo.Version = _inputText;
             Close();
         }
 
@@ -33,3 +34,4 @@ public class VersionChanger : EditorWindow
         window.ShowUtility();
     }
 }
+#endif
