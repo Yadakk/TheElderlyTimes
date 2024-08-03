@@ -3,27 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(InertiaUI))]
 public class DraggableInertiaUI : Draggable
 {
-    [Range(0f, 1f)]
-    public float Friction = 0.5f;
+    public float PullForce = 0.1f;
 
-    private Vector2 _velocity;
+    private readonly LazyComponent<InertiaUI> _inertiaUI = new();
+    public InertiaUI InertiaUI => _inertiaUI.Value(this);
 
-    protected virtual void FixedUpdate()
+    private Vector3 _grabOffset;
+    private bool _isDragging;
+
+    public virtual void FixedUpdate()
     {
-        RectTransform.anchoredPosition += _velocity;
-        _velocity = Vector2.Lerp(_velocity, Vector2.zero, Friction);
+        if (!_isDragging) return;
+        Vector2 direction = Input.mousePosition - RectTransform.position - _grabOffset;
+        InertiaUI.Velocity += direction * PullForce;
     }
 
     public override void OnBeginDrag(PointerEventData eventData)
     {
-        _velocity = Vector2.zero;
+        base.OnBeginDrag(eventData);
+
+        _grabOffset = Input.mousePosition - RectTransform.position;
+        _isDragging = true;
     }
+
+    public override void OnDrag(PointerEventData eventData) { }
 
     public override void OnEndDrag(PointerEventData eventData)
     {
         base.OnEndDrag(eventData);
-        _velocity = eventData.delta / Canvas.scaleFactor;
+
+        _isDragging = false;
     }
 }

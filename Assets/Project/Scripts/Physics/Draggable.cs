@@ -10,14 +10,14 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     [Range(0f, 1f)]
     public float AlphaInDrag = 0.4f;
 
+    private readonly LazyComponentInParent<Canvas> _canvas = new();
+    public Canvas Canvas => _canvas.Value(this);
+
     private readonly LazyComponent<CanvasGroup> _canvasGroup = new();
     public CanvasGroup CanvasGroup => _canvasGroup.Value(this);
 
     private readonly LazyComponent<RectTransform> _rectTransform = new();
     public RectTransform RectTransform => _rectTransform.Value(this);
-
-    private readonly LazyComponentInParent<Canvas> _canvas = new();
-    public Canvas Canvas => _canvas.Value(this);
 
     public virtual void OnBeginDrag(PointerEventData eventData)
     {

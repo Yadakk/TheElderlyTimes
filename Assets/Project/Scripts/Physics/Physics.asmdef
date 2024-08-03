@@ -2,7 +2,9 @@
     "name": "Physics",
     "rootNamespace": "",
     "references": [
-        "GUID:8873dfee59bc0a045a65fdb35b60931a"
+        "GUID:8873dfee59bc0a045a65fdb35b60931a",
+        "GUID:ef4206714d0ce544c9ef48b56b31c0e4",
+        "GUID:deacc6e85ecf7e0459042c7a7c55c2b8"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
