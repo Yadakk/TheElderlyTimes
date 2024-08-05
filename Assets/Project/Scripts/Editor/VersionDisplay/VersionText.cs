@@ -4,30 +4,31 @@ using UnityEngine;
 using TMPro;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
-[ExecuteInEditMode]
+[RequireComponent(typeof(VersionChangedMonoEvent))]
+[ExecuteAlways]
 public class VersionText : MonoBehaviour
 {
     private readonly LazyComponent<TextMeshProUGUI> _textMesh = new();
     public TextMeshProUGUI TextMesh => _textMesh.Value(this);
 
-    private void Start()
-    {
-        UpdateText(ProjectInfo.Version);
-    }
+    private readonly LazyComponent<VersionChangedMonoEvent> _monoEvent = new();
+    public VersionChangedMonoEvent MonoEvent => _monoEvent.Value(this);
 
-#if UNITY_EDITOR
     private void OnEnable()
     {
-
-        ProjectInfo.OnVersionChanged.AddListener(UpdateText);
+        UpdateText();
+        MonoEvent.OnVersionChanged.AddListener(UpdateText);
     }
 
     private void OnDisable()
     {
-
-        ProjectInfo.OnVersionChanged.RemoveListener(UpdateText);
+        MonoEvent.OnVersionChanged.RemoveListener(UpdateText);
     }
-#endif
+
+    private void UpdateText()
+    {
+        TextMesh.text = "Version: " + Application.version;
+    }
 
     private void UpdateText(string versionNumber)
     {

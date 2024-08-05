@@ -1133,11 +1133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 157.50507
+      value: 157.505
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000015258789
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4696268486335378436, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: 0.6'
+  m_text: 'Version: 0.9.2'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 575e5aa65cbcdab46b20339b975a872b, type: 2}
   m_sharedMaterial: {fileID: -7343013194986133744, guid: 575e5aa65cbcdab46b20339b975a872b, type: 2}
@@ -1300,6 +1300,7 @@ GameObject:
   - component: {fileID: 118477283094946578}
   - component: {fileID: 171386339066068062}
   - component: {fileID: 8642093768118118468}
+  - component: {fileID: 8642093768118118469}
   m_Layer: 5
   m_Name: CurrentVersion
   m_TagString: Untagged
@@ -1753,6 +1754,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71edca1fdc1b8d44ba03a2fecbb9d13f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8642093768118118469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2612997394421228101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d07beb412d1ea47b559b20d63ea9f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8891329302266247227

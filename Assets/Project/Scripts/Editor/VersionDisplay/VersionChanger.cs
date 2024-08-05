@@ -15,7 +15,6 @@ public class VersionChanger : EditorWindow
         if (GUILayout.Button("Accept"))
         {
             PlayerSettings.bundleVersion = _inputText;
-            ProjectInfo.Version = _inputText;
             Close();
         }
 

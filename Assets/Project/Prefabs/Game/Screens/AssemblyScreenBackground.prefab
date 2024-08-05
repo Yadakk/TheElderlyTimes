@@ -65,6 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b6261afdff02646afd4f8d91bdd18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PushForce: 0.1
 --- !u!1 &2583187231342357516
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +219,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8083302876427430115, guid: d692fd3d2efbc874ebe902f2261c24c9, type: 3}
       propertyPath: m_Name
-      value: Newspaper
+      value: TestDraggable
       objectReference: {fileID: 0}
     - target: {fileID: 8875482563252626103, guid: d692fd3d2efbc874ebe902f2261c24c9, type: 3}
       propertyPath: m_Pivot.x
@@ -246,11 +247,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8875482563252626103, guid: d692fd3d2efbc874ebe902f2261c24c9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 553.7451
+      value: 266
       objectReference: {fileID: 0}
     - target: {fileID: 8875482563252626103, guid: d692fd3d2efbc874ebe902f2261c24c9, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 587.4852
+      value: 243
       objectReference: {fileID: 0}
     - target: {fileID: 8875482563252626103, guid: d692fd3d2efbc874ebe902f2261c24c9, type: 3}
       propertyPath: m_LocalPosition.x
