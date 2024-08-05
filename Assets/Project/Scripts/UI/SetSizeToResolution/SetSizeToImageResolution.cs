@@ -7,10 +7,10 @@ using UnityEngine.UI;
 [RequireComponent(typeof(ImageSpriteChangedMonoEvent))]
 [RequireComponent(typeof(RectTransform))]
 [ExecuteAlways]
-public class SetSizeToResolution : MonoBehaviour
+public class SetSizeToImageResolution : MonoBehaviour
 {
-    private readonly LazyComponent<ImageSpriteChangedMonoEvent> _image = new();
-    public ImageSpriteChangedMonoEvent Image => _image.Value(this);
+    private readonly LazyComponent<ImageSpriteChangedMonoEvent> _monoEvent = new();
+    public ImageSpriteChangedMonoEvent MonoEvent => _monoEvent.Value(this);
 
     private readonly LazyComponent<RectTransform> _rectTransform = new();
     public RectTransform RectTransform => _rectTransform.Value(this);
@@ -18,15 +18,15 @@ public class SetSizeToResolution : MonoBehaviour
     private void OnEnable()
     {
         UpdateSize();
-        Image.OnSpriteChanged.AddListener(UpdateSize);
+        MonoEvent.OnSpriteChanged.AddListener(UpdateSize);
     }
 
     private void OnDisable() =>
-        Image.OnSpriteChanged.RemoveListener(UpdateSize);
+        MonoEvent.OnSpriteChanged.RemoveListener(UpdateSize);
 
     private void UpdateSize()
     {
-        Sprite sprite = Image.sprite;
+        Sprite sprite = MonoEvent.Image.sprite;
 
         if (!sprite) return;
         RectTransform.sizeDelta = sprite.rect.size;
