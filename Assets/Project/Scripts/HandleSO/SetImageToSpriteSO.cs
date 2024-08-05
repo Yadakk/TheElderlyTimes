@@ -16,11 +16,13 @@ public class SetImageToSpriteSO : RequireSO<SpriteSO>
     private void OnEnable()
     {
         UpdateImage();
+        if (DerivedSO == null) return;
         DerivedSO.OnSpriteChanged.AddListener(UpdateImage);
     }
 
     private void OnDisable()
     {
+        if (DerivedSO == null) return;
         DerivedSO.OnSpriteChanged.RemoveListener(UpdateImage);
     }
 
