@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6d4f750b648564dbbcf7996808a53e, type: 3}
-  m_Name: Background
+  m_Name: New SpriteSO
   m_EditorClassIdentifier: 
   Sprite: {fileID: 0}
