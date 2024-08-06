@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33508ab8869940a4496798c034b4b441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObject: {fileID: 11400000, guid: 3a37c07df120fda4a9b5201085fcb958, type: 2}
+  _scriptableObject: {fileID: 11400000, guid: 9affb2eb446c6fa45a7332e8e61bbf05, type: 2}
 --- !u!222 &8968824426149852126
 CanvasRenderer:
   m_ObjectHideFlags: 0
