@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(RectTransform))]
-public class InertiaUI : MonoBehaviour
+public class InertiaUI : MonoBehaviour, IVelocity
 {
     [Range(0f, 1f)]
     public float Friction = 0.5f;
@@ -26,7 +26,7 @@ public class InertiaUI : MonoBehaviour
 
         if (Border.RectTransform == null) return;
 
-        Border.KeepInsideBorders(this);
+        Border.KeepInsideBorders(this, RectTransform);
     }
 
     private void ApplyVelocity()

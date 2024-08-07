@@ -8,10 +8,10 @@ public class PhysicsBorder
     public RectTransform RectTransform;
     public float PushForce = 0.1f;
 
-    public void KeepInsideBorders(InertiaUI inertiaUI)
+    public void KeepInsideBorders(IVelocity iVelocity, RectTransform rectTransform)
     {
-        Vector2 direction = GetDirectionToKeepInBorder(inertiaUI.RectTransform);
-        inertiaUI.Velocity += direction * PushForce;
+        Vector2 direction = GetDirectionToKeepInBorder(rectTransform);
+        iVelocity.Velocity += direction * PushForce;
     }
 
     public Vector2 GetDirectionToKeepInBorder(RectTransform rectTransform)
