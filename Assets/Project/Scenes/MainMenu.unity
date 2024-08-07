@@ -133,6 +133,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1471174577718266744, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108589033046917466, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
+      propertyPath: _text
       value: "<voffset=-0.22em>\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 4191780149535456205, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
@@ -229,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 194.50507
+      value: 194.505
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -237,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4696268486335378436, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
-      value: "<voffset=-0.22em>\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C</voffset>"
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 6557952780463220417, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_SizeDelta.x
@@ -603,7 +607,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1471174577718266744, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
-      value: "<voffset=-0.22em>\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430</voffset>"
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 3661770008651236666, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -656,6 +660,10 @@ PrefabInstance:
     - target: {fileID: 3661770008651236666, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108589033046917466, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
+      propertyPath: _text
+      value: "<voffset=-0.22em>\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 4191780149535456205, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: _text
@@ -751,15 +759,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 168.00507
+      value: 168.005
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000019073486
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4696268486335378436, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
-      value: "<voffset=-0.22em>\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430</voffset>"
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 6557952780463220417, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_SizeDelta.x
@@ -786,6 +794,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1471174577718266744, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108589033046917466, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
+      propertyPath: _text
       value: "<voffset=-0.22em>\u0421\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u0438</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 4191780149535456205, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
@@ -882,15 +894,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 168.00507
+      value: 168.005
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4696268486335378436, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
-      value: "<voffset=-0.22em>\u0421\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u0438</voffset>"
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 6557952780463220417, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_SizeDelta.x
@@ -916,7 +928,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1471174577718266744, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
-      value: "<voffset=-0.22em>\u0412\u044B\u0445\u043E\u0434</voffset>"
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108589033046917466, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
+      propertyPath: _text
+      value: "<voffset=-0.22em>\u0412\u044B\u0439\u0442\u0438</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 4191780149535456205, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: _text
@@ -1012,15 +1028,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 110.00506
+      value: 110.005
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4696268486335378436, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
-      value: "<voffset=-0.22em>\u0412\u044B\u0445\u043E\u0434</voffset>"
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 6557952780463220417, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1041,6 +1057,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1471174577718266744, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108589033046917466, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
+      propertyPath: _text
       value: "<voffset=-0.22em>\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 4191780149535456205, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
@@ -1145,7 +1165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4696268486335378436, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
-      value: "<voffset=-0.22em>\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438</voffset>"
+      value: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
       objectReference: {fileID: 0}
     - target: {fileID: 6557952780463220417, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1176,7 +1196,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: 0.12'
+  m_text: 'Version: 0.12.1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 575e5aa65cbcdab46b20339b975a872b, type: 2}
   m_sharedMaterial: {fileID: -7343013194986133744, guid: 575e5aa65cbcdab46b20339b975a872b, type: 2}

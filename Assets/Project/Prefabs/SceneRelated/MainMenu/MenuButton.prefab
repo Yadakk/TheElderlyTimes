@@ -343,9 +343,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c4ada4591036d48af005f488e0469c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextsMeshes: []
-  VerticalOffset: -0.22
-  _text: "\u0422\u0435\u043A\u0441\u0442"
+  TextMeshes:
+  - {fileID: 4696268486335378436}
+  - {fileID: 1471174577718266744}
+  _text: "<voffset=-0.22em>\u0422\u0435\u043A\u0441\u0442</voffset>"
 --- !u!1 &5792093511455850879
 GameObject:
   m_ObjectHideFlags: 0
