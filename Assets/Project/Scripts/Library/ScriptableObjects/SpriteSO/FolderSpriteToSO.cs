@@ -6,10 +6,15 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-public static class SpriteToSO
+public static class FolderSpriteToSO
 {
     [MenuItem("Assets/Create/ScriptableObjects/SpriteSO/Sprites From Folder", false)]
-    private static void CreateSpritesFromFolder()
+    private static void OnMenuItemClicked()
+    {
+        CreateSpritesFromFolder<SpriteSO>();
+    }
+
+    private static void CreateSpritesFromFolder<T>() where T : SpriteSO
     {
         string folderPath = ClickedDir.GetPath();
         string[] spriteGUIDs = AssetDatabase.FindAssets("t:Sprite", new string[] { folderPath });
@@ -18,11 +23,9 @@ public static class SpriteToSO
         {
             string spritePath = AssetDatabase.GUIDToAssetPath(spriteGUIDs[i]);
             Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(spritePath);
-
-            SpriteSO spriteSO = ScriptableObject.CreateInstance<SpriteSO>();
+            T spriteSO = ScriptableObject.CreateInstance<T>();
             spriteSO.Sprite = sprite;
-
-            AssetDatabase.CreateAsset(spriteSO, Path.Combine(folderPath, sprite.name) + ".asset");
+            AssetDatabase.CreateAsset(spriteSO, Path.Combine(Path.GetDirectoryName(spritePath), typeof(T) + " " + sprite.name) + ".asset");
         }
     }
 }
