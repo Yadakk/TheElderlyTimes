@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: NewspaperSOList
   m_EditorClassIdentifier: 
   ScriptableObjects:
-  - {fileID: 11400000, guid: ca7e405b87374eb4ebcb0f2d55fd7900, type: 2}
-  - {fileID: 11400000, guid: 26d3a6577a854d94d81d41b1e7eab788, type: 2}
-  - {fileID: 11400000, guid: fd74573e4f1a9e34e982d8193d5ee841, type: 2}
-  - {fileID: 11400000, guid: bd0f0bc90df9f0741b592bdba743836e, type: 2}
-  - {fileID: 11400000, guid: 69dbf5e31d78a51499ab07f580807a80, type: 2}
-  - {fileID: 11400000, guid: 6aba95909debec942b637e8f3ac87023, type: 2}
-  - {fileID: 11400000, guid: 070b77424486c644fb7fab2ee4c0a15a, type: 2}
-  - {fileID: 11400000, guid: cc4125e448209454789340946486a0b0, type: 2}
-  - {fileID: 11400000, guid: 0e4e913a42afb5e44b7ed044642cb9c4, type: 2}
+  - {fileID: 11400000, guid: f39d022ef77be754c98ef1807452f1f3, type: 2}
+  - {fileID: 11400000, guid: ab5e71db769c24647bc7656773628504, type: 2}
+  - {fileID: 11400000, guid: 2f805839203e8104eab9cf0b8e6add0f, type: 2}
+  - {fileID: 11400000, guid: 1573e655b8c72d9439601d61eba3ed49, type: 2}
+  - {fileID: 11400000, guid: d4a0a169bb960544c99a68ad80ee6937, type: 2}
+  - {fileID: 11400000, guid: 44e24b6d36771934cbdbf99fb04f1714, type: 2}
+  - {fileID: 11400000, guid: 86631556dee2603499e935b8c04002f0, type: 2}
+  - {fileID: 11400000, guid: 01f348e67af0351428787f175f4c552a, type: 2}
+  - {fileID: 11400000, guid: 684d0b816faead940b92735c6b124e3e, type: 2}

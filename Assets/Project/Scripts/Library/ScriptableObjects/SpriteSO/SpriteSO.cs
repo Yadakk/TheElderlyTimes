@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(fileName = "New SpriteSO", menuName = "ScriptableObjects/SpriteSO/SO", order = 281)]
+[CreateAssetMenu(fileName = "New SpriteSO", menuName = "ScriptableObjects/Sprite/SO", order = 281)]
 public class SpriteSO : ScriptableObject
 {
     public Sprite Sprite;

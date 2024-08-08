@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class NewspaperSOList : GenericSOList<NewspaperSO>
 {
-    [MenuItem("Assets/Create/ScriptableObjects/NewspaperSO/Folder To List", false)]
+    [MenuItem("Assets/Create/ScriptableObjects/Newspaper/Folder To List", false)]
     private static void OnMenuItemClicked()
     {
         var scriptableObjectList = CreateInstance<NewspaperSOList>();
-        FolderSOToList.CreateSOListFromClickedFolder(scriptableObjectList);
+        SOFromFolderToList.CreateSOListFromClickedFolder(scriptableObjectList);
     }
 }
