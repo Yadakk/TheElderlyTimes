@@ -11,10 +11,11 @@ public static class FolderSpriteToSO
     [MenuItem("Assets/Create/ScriptableObjects/SpriteSO/Sprites From Folder", false)]
     private static void OnMenuItemClicked()
     {
-        CreateSpritesFromFolder<SpriteSO>();
+        SpriteSO spriteSO = ScriptableObject.CreateInstance<SpriteSO>();
+        CreateForEverySprite(spriteSO);
     }
 
-    private static void CreateSpritesFromFolder<T>() where T : SpriteSO
+    public static void CreateForEverySprite(SpriteSO spriteSO)
     {
         string folderPath = ClickedDir.GetPath();
         string[] spriteGUIDs = AssetDatabase.FindAssets("t:Sprite", new string[] { folderPath });
@@ -23,9 +24,13 @@ public static class FolderSpriteToSO
         {
             string spritePath = AssetDatabase.GUIDToAssetPath(spriteGUIDs[i]);
             Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(spritePath);
-            T spriteSO = ScriptableObject.CreateInstance<T>();
-            spriteSO.Sprite = sprite;
-            AssetDatabase.CreateAsset(spriteSO, Path.Combine(Path.GetDirectoryName(spritePath), typeof(T) + " " + sprite.name) + ".asset");
+
+            SpriteSO newSpriteSO = spriteSO.Clone();
+            newSpriteSO.Sprite = sprite;
+
+            string targetFolder = Path.GetDirectoryName(spritePath);
+            string fileNameSO = newSpriteSO.GetType().Name + " " + sprite.name + ".asset";
+            AssetDatabase.CreateAsset(newSpriteSO, Path.Combine(targetFolder, fileNameSO));
         }
     }
 }

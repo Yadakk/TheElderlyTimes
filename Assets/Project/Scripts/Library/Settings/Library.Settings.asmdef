@@ -1,0 +1,18 @@
+{
+    "name": "Library.Settings",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8873dfee59bc0a045a65fdb35b60931a",
+        "GUID:017d89465c0445046ba931fc41659e52",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

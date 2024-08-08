@@ -759,11 +759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 168.005
+      value: 168.00507
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.000019073486
       objectReference: {fileID: 0}
     - target: {fileID: 4696268486335378436, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
@@ -894,11 +894,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 168.005
+      value: 168.00507
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 4696268486335378436, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
@@ -1028,11 +1028,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 110.005
+      value: 110.00506
       objectReference: {fileID: 0}
     - target: {fileID: 4530924183607668448, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 4696268486335378436, guid: 305e01e8639b42b469d12e3899139f22, type: 3}
       propertyPath: m_text
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: 0.12.3'
+  m_text: 'Version: 0.12.4'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 575e5aa65cbcdab46b20339b975a872b, type: 2}
   m_sharedMaterial: {fileID: -7343013194986133744, guid: 575e5aa65cbcdab46b20339b975a872b, type: 2}
